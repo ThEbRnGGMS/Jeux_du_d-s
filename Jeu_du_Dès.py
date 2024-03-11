@@ -1,4 +1,6 @@
 import random
+import time
+
 print("Bienvenue dans le jeux du dès")
 dice = str(input("Veut tu lancer le dès (o = Oui ; n = Non) ? "))
 
@@ -19,5 +21,6 @@ while rejouer != 'n':
         elif resultat%2 == 1:
             qst_verité = random.choices(option_verité)
             print(qst_verité)
-
+            
+    time.sleep(5)
     rejouer = str(input("Veut tu relancer le dès ? (o = oui ; n = non) ? "))
